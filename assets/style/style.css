@@ -81,7 +81,7 @@ footer {
 
 /* Clases seccion conversor de moneda */
 
-.conversor{
+.conversor, .prestamos{
     display: flex;
     flex-direction: column;
     align-items: center;

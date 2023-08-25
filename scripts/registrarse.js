@@ -7,5 +7,4 @@ miBoton.addEventListener("click", () => {
     icon: "success",
     confirmButtonText: "Ok",
   });
-  return false;
 });
