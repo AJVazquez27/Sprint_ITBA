@@ -11,38 +11,46 @@
 </head>
 <body>
 
+    <header class="header_is">
+      <a  href="../../index.html">
+        <img class="logo" src="../images/logo.png" alt="logo del banco">
+      </a>
+      <a href="../../index.html">Volver al Inicio</a>
+    </header>
+
     <main class="main_is">
-      <div class="form">
-        <img class="logoR" src="../images/logo.png" alt="logo del banco ITBANK">
         <h1>Iniciar sesión</h1>
         <form class="formulario">
-
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Usuario</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             </div>
-
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
-
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Recuerdame.</label>
             </div>
-
-            <button id="boton_is" type="submit" class="btn btn-primary">Iniciar Sesión</button>
-
-        </form>
-
-        <p>¿No tienes una cuenta? <a href="../pages/registrarse.html">Registrate</a></p>
-
-      </div>
-      <div class="image"></div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </form>
+          <p>No tienes una cuenta? <a href="../pages/registrarse.html">Registrate</a></p>
     </main>
 
-    <script src="../../iniciar_sesion.js"></script>
+    <footer>
+        <div class="miniIcon">
+            <i class="fa-brands fa-facebook mini"></i>
+            <i class="fa-brands fa-instagram mini"></i>
+            <i class="fa-brands fa-whatsapp mini"></i>
+        </div>
+        <div class="info">
+            <a class="footA" href="#">|| Terminos y condiciones |</a>
+            <a class="footA" href="#">| Politicas de privacidad |</a>
+            <a class="footA" href="#">| Contacto</a>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
 </body>
