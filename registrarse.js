@@ -1,10 +1,12 @@
 const miBoton = document.getElementById('miBoton');
 
-miBoton.addEventListener('click', () => {
+miBoton.addEventListener('click', (event) => {
+    event.preventDefault();
     Swal.fire({
         title: '¡Bien!',
-        text: 'Usurio registrado con éxito',
-        icon: 'success',
+        text: 'Usuario registrado con éxito',
         confirmButtonText: 'Ok'
+    }).then(() => {
+        window.location.href = './iniciar_sesion.html';
     });
 });
