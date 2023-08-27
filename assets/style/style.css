@@ -29,9 +29,12 @@ main {
 }
 
 #banner {
-  height: 21rem;
-  width: 84.3rem;
-  margin-top: 1rem;
+    background-image: url(../images/banner.png);
+    min-height: 25vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -81,47 +84,66 @@ footer {
 
 /* Clases seccion conversor de moneda */
 
-.conversor,
-.prestamos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.conversor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#cambio_valor {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+#cambio_valor{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* inicio de sesión*/
+/* inicio de sesion y registrarse*/
 
-.header_is {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+.main_is{
+    display: flex;
+    min-height: 100vh;
 }
 
-.main_is {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.logoR{
+    height: 5rem;
+    width: 6rem;
+    margin-bottom: 2rem;
 }
 
-.formulario {
-  width: 40rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
+.form{
+    display: flex;
+    min-width: 55%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-/* Simulador de moneda */
-
-#tablaCSS {
-  margin-top: 1rem;
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
-#btnForm {
-  margin-top: 1rem;
+.image{
+    min-width: 45%;
+    background-image: url(../images/mejor_registro.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:rgb(66, 124, 174);
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+   
+}
+
+@media only screen and (min-width:320px) and (max-width: 767px){
+    .form{
+        min-width: 100%;
+    }
+    .image{
+        min-width: 0%;
+        background-image: none;
+    }
 }
