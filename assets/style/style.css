@@ -1,149 +1,246 @@
-* {
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 
-.nav-principal {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+/*Header*/
+header {
+  position: fixed;
+  width: -webkit-fill-available;
+  background-image: linear-gradient(#eba8178e, rgba(240, 248, 255, 0.61));
 }
 
 .logo {
+  margin-left: 6.5rem;
   height: 5rem;
   width: 6.5rem;
 }
 
-a {
-  font-size: 1.3rem;
-  color: blue;
-  text-decoration: none;
-  margin-top: 0.5rem;
+.out {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 2rem;
 }
 
+/*Main*/
 main {
-  min-height: 80vh;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-bottom: 12%;
 }
-
-#banner {
-    background-image: url(../images/banner.png);
-    min-height: 25vh;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 1rem;
+.greeting {
+  position: fixed;
 }
 
 h1 {
-  text-align: center;
   color: rgb(66, 124, 174);
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-top: 5.5rem;
 }
 
-.cards {
-  background-color: rgb(66, 124, 174);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+/* Footer*/
+
+.footer {
+  background-image: linear-gradient(rgba(240, 248, 255, 0.61), #eba8178e);
 }
+
+.media {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #427cae;
+  text-align: center;
+}
+
+.information {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 30%;
+}
+
+a {
+  color: #eba917;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(66, 124, 174);
+  cursor: pointer;
+}
+
+/*Sidebar*/
+.sidebar {
+  margin-top: 5%;
+  position: fixed;
+  width: -webkit-fill-available;
+  margin-bottom: 20%;
+}
+
+#menu {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 6rem;
+  padding: 1rem;
+  border-right: dotted;
+  border-color: #f1a80a75;
+  position: absolute;
+  width: 18rem;
+  height: 22rem;
+}
+
+li {
+  margin: 1rem;
+}
+.leftcolumn {
+  float: left;
+  width: 10%;
+}
+
+/*Inicio*/
 
 .card {
+  background-color: #eba81757;
+  border-radius: 1rem;
+  border-left: solid rgb(66, 124, 174);
+  margin: auto;
+  max-width: 30rem;
+  max-height: 20rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 3rem;
 }
 
-footer {
-  min-height: 10vh;
+#eye {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 1rem;
+}
+
+#eye:hover {
+  cursor: pointer;
+}
+
+/*Banner de Inicio*/
+.contener-banners {
+  margin-top: 10%;
   display: flex;
+}
+
+.banner,
+.bannerB {
+  width: 30%;
+}
+.bannerA {
+  margin-left: 5%;
+  width: 30%;
+}
+
+/*Pagina de Cuentas*/
+ul,
+h2,
+h3,
+h5 {
+  color: rgb(66, 124, 174);
+}
+
+/*Pagina de Pagos*/
+#tablaCSS {
+  margin: 3.5rem;
+  max-width: 85%;
+}
+
+.payment {
+  margin-top: 5%;
+}
+
+/*Pagina de Prestamos*/
+.simTabla {
+  margin-right: 50%;
+}
+
+/* Pagina Conversor de Moneda */
+
+.conversor,
+.simPrestamo,
+.titleCuenta,
+.titlePagos,
+.titleTransfer {
+  margin-top: 5%;
+  margin-left: 20%;
   align-items: center;
-  justify-content: space-between;
 }
 
-.info {
-  display: flex;
+.formConversor,
+.formSimulador {
+  margin-top: 5rem;
+  margin-left: 25%;
+}
+.eleccionDeMoneda {
+  margin-left: 3.2%;
 }
 
-.footA {
-  font-size: 1.2rem;
-  color: blue;
+#cambio_valor {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.miniIcon {
-  display: flex;
-  gap: 2rem;
-}
-
-.mini {
-  font-size: 2rem;
-}
-
-/* Clases seccion conversor de moneda */
-
-.conversor, .prestamos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cambio_valor{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 /* inicio de sesion y registrarse*/
 
-.main_is{
-    display: flex;
-    min-height: 100vh;
+.main_is {
+  display: flex;
+  min-height: 100vh;
 }
 
-.logoR{
-    height: 5rem;
-    width: 6rem;
-    margin-bottom: 2rem;
+.logoR {
+  height: 5rem;
+  width: 6rem;
+  margin-bottom: 2rem;
 }
 
-.form{
-    display: flex;
-    min-width: 55%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.form {
+  display: flex;
+  min-width: 55%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1rem;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-.image{
-    min-width: 45%;
-    background-image: url(../images/mejor_registro.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color:rgb(66, 124, 174);
+.image {
+  min-width: 45%;
+  background-image: url(../images/mejor_registro.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(66, 124, 174);
 }
 
+/*Responsive*/
 
-@media only screen and (min-width:768px) and (max-width: 1024px){
-   
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
-@media only screen and (min-width:320px) and (max-width: 767px){
-    .form{
-        min-width: 100%;
-    }
-    .image{
-        min-width: 0%;
-        background-image: none;
-    }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .form {
+    min-width: 100%;
+  }
+  .image {
+    min-width: 0%;
+    background-image: none;
+  }
 }
