@@ -8,80 +8,101 @@
     <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/images/banco.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="shortcut icon" href="/assets/images/banco.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 
 <body>
 
     <header>
         <nav class="nav-principal">
-            <a  href="../../index.html">
-                <img class="logo" src="assets/images/logo.png" alt="logo del banco">
-            </a>
-            <a href="#">Inicio</a>
-            <a href="./assets/pages/transferencias.html">Transferencias</a>
-            <a href="./assets/pages/pagos.html">Pagos</a>
-            <a href="./assets/pages/conversor.html">Conversor de moneda</a>
-            <a href="./assets/pages/iniciar_sesion.html">Iniciar sesión</a>
-            <a href="./assets/pages/registrarse.html">Registrarse</a>
+            <img class="logo" src="/assets/images/logo.png" alt="logo del banco">
+            <a class="out" href="/assets/pages/iniciar_sesion.html"><i
+                    class="fa-sharp fa-solid fa-arrow-right-from-bracket fa-beat fa-2xl"
+                    style="color: rgb(66, 124, 174);"></i></a>
         </nav>
     </header>
 
-    <main>
-        <div>
-            <img id= "banner" src="/assets/images/banner.png" alt="banner"></a>
+    <div class="row">
+        <div class="leftcolum">
+            <div class="greeting">
+                <h1>¡Hola, user!</h1>
+            </div>
+            <nav>
+                <div class="sidebar">
+                    <ul id="menu">
+                        <li><i class="fa-solid fa-border-none" style="color: #e77f08;"></i><a href="./index.html">
+                                Inicio</a></li>
+                        <li><i class="fa-solid fa-wallet" style="color: #e77f08;"></i><a
+                                href="/assets/pages/cuentas.html"> Cuenta</a></li>
+                        <li><i class="fa-solid fa-money-check-dollar" style="color: #e77f08;"></i><a
+                                href="/assets/pages/pagos.html"> Pagos</a></li>
+                        <li><i class="fa-solid fa-money-bill-transfer" style="color: #e77f08;"></i><a
+                                href="/assets/pages/transferencias.html"> Transferencias</a></li>
+                        <li><i class="fa-solid fa-handshake" style="color: #e77f08;"></i><a
+                                href="/assets/pages/prestamos.html"> Prestamos</a></li>
+                        <li><i class="fa-solid fa-coins" style="color: #e77f08;"></i><a
+                                href="/assets/pages/conversor.html"> Conversor</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <h1>Lo que tenemos para vos:</h1>
-        <div class="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/images/1-removebg-preview (2).png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Te brindamos un registro de tus movimientos.</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Conocer más</a>
+    </div>
+
+    <main>
+        <section class="inicio">
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Cuentas</h5>
+                            <p class="account_kind">Caja de Ahorro$</p>
+                            <p class="money">0.00</p>
+                            <a href="/assets/pages/cuentas.html" class="btn btn-primary">Ver todo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Tarjetas</h5>
+                            <p class="card_number"><i id="eye" class="fa-regular fa-eye"
+                                    style="color: rgb(66, 124, 174);" onclick=""></i>numero de tarjeta</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/images/1-removebg-preview.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Te cuidamos de las estafas.</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Conocer más</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/images/Diseño_sin_título3-removebg-preview.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Obtenes tu dinero al instante.</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Conocer más</a>
-                </div>
-            </div>
+        </section>
+
+        <div class="contener-banners">
+            <img class="bannerA" src="/assets/images/bannerA.png" alt="">
+            <img class="banner" src="/assets/images/banner.png" alt="Seguridad y facil manejo de tus cuentas">
+            <img class="bannerB" src="/assets/images/bannerB.png" alt="">
         </div>
     </main>
 
+
     <footer>
-        <div class="miniIcon">
-            <i class="fa-brands fa-facebook mini"></i>
-            <i class="fa-brands fa-instagram mini"></i>
-            <i class="fa-brands fa-whatsapp mini"></i>
-        </div>
-        <div class="info">
-            <a class="footA" href="#">|| Terminos y condiciones |</a>
-            <a class="footA" href="#">| Politicas de privacidad |</a>
-            <a class="footA" href="#">| Contacto</a>
+        <div class="footer">
+            <ul class="information">
+                <li><a href="#">|| Terminos y condiciones |</a></li>
+                <li><a href="#">| Politicas de privacidad |</a></li>
+                <li> <a href="#">| Contacto</a></li>
+            </ul>
+            <div class="media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook mini"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram mini"></i></a>
+                <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp mini"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script src="conversor.js"></script>
-    <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
