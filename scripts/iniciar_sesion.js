@@ -1,6 +1,14 @@
-const miBoton = document.getElementById("boton_is");
+function validarInicioSesion() {
+  let email = document.getElementById("exampleInputEmail1").value;
+  let contraseña = document.getElementById("exampleInputPassword1").value;
 
-miBoton.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.location.href = "/index.html";
-});
+  if (email === "") {
+    alert("Por favor ingrese un e-mail");
+    return false;
+  } else if (contraseña === "") {
+    alert("Por favor ingrese la contraseña");
+    return false;
+  } else {
+    window.location.href = "/index.html";
+  }
+}

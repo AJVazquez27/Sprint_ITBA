@@ -22,21 +22,20 @@
 
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Usuario</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Usuario/Email" required>
         </div>
 
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" required>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" required>
         </div>
 
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Recuerdame.</label>
         </div>
-
-        <button id="boton_is" type="submit" class="btn btn-primary">Iniciar Sesión</button>
-
+        <input type="button" class="btn btn-primary" value="Iniciar Sesión" onclick="validarInicioSesion()">
       </form>
 
       <p>¿No tienes una cuenta? <a href="../pages/registrarse.html">Registrate</a></p>
