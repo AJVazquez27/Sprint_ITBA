@@ -28,8 +28,8 @@
             <nav>
                 <div class="sidebar">
                     <ul id="menu">
-                        <li><i class="fa-solid fa-border-none" style="color: #e77f08;"></i><a
-                                href="/index.html"> Inicio</a></li>
+                        <li><i class="fa-solid fa-border-none" style="color: #e77f08;"></i><a href="/index.html"></a>
+                            Inicio</a></li>
                         <li><i class="fa-solid fa-wallet" style="color: #e77f08;"></i><a
                                 href="/assets/pages/cuentas.html"> Cuenta</a></li>
                         <li><i class="fa-solid fa-money-check-dollar" style="color: #e77f08;"></i><a
@@ -47,16 +47,16 @@
     </div>
     <main>
         <div class="simPrestamo">
-            <h1>SIMULADOR DE PRESTAMO</h1>
+            <h1>Simulador de préstamos</h1>
         </div>
         <section class="formSimulador">
             <form id="formPrestamos">
-                <div>
+                <div class="prest">
                     <label for="montoPrestamo">Ingresar el monto del préstamo
                         <input type="number" placeholder="Ingrese un monto" id="montoPrestamo" required min="1000">
                     </label>
                 </div>
-                <div>
+                <div class="prest">
                     <label for="cuotasPrestamo">Indicar el número de cuotas</label>
                     <select name="cuotasPrestamo" id="cuotasPrestamo">
                         <option value="1" selected>1</option>
@@ -73,7 +73,7 @@
                         <option value="12">12</option>
                     </select>
                 </div>
-                <div>
+                <div class="prest">
                     <label for="interesPrestamo">Tasa de interes anual
                         <input type="number" placeholder="Ingrese la tasa de interes" id="interesPrestamo" required
                             min="50">
