@@ -1,47 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagos</title>
     <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../images/banco.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/assets/images/banco.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
+
 <body>
 
     <header>
         <nav class="nav-principal">
-            <a  href="../../index.html">
-                <img class="logo" src="../images/logo.png" alt="logo del banco">
-            </a>
-            <a  href="../../index.html">Inicio</a>
-            <a  href="../pages/transferencias.html">Transferencias</a>
-            <a  href="#">Pagos</a>
-            <a  href="../pages/conversor.html">Conversor de moneda</a>
-            <a href="../pages/iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../pages/registrarse.html">Registrarse</a>
-
+            <img class="logo" src="/assets/images/logo.png" alt="logo del banco">
+            <a class="out" href="/assets/pages/iniciar_sesion.html"><i
+                    class="fa-sharp fa-solid fa-arrow-right-from-bracket fa-beat fa-2xl"
+                    style="color: rgb(66, 124, 174);"></i></a>
         </nav>
     </header>
 
-    <main></main>
+    <div class="row">
+        <div class="leftcolum">
+            <nav>
+                <div class="sidebar">
+                    <ul id="menu">
+                        <li><i class="fa-solid fa-border-none" style="color: #e77f08;"></i><a
+                                href="/index.html"> Inicio</a></li>
+                        <li><i class="fa-solid fa-wallet" style="color: #e77f08;"></i><a
+                                href="/assets/pages/cuentas.html"> Cuenta</a></li>
+                        <li><i class="fa-solid fa-money-check-dollar" style="color: #e77f08;"></i><a
+                                href="/assets/pages/pagos.html"> Pagos</a></li>
+                        <li><i class="fa-solid fa-money-bill-transfer" style="color: #e77f08;"></i><a
+                                href="/assets/pages/transferencias.html"> Transferencias</a></li>
+                        <li><i class="fa-solid fa-handshake" style="color: #e77f08;"></i><a
+                                href="/assets/pages/prestamos.html"> Prestamos</a></li>
+                        <li><i class="fa-solid fa-coins" style="color: #e77f08;"></i><a
+                                href="/assets/pages/conversor.html"> Conversor</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="titlePagos">
+            <h1>Mis Pagos</h1>
+        </div>
+        <section class="payment">
+            <table id="tablaCSS" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>N° de transacción</td>
+                        <td>Cuenta</td>
+                        <td>Motivo</td>
+                        <td>Fecha</td>
+                        <td>Importe</td>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    <tr>
+                        <td>00000000001</td>
+                        <td>ITBA</td>
+                        <td>Cuota</td>
+                        <td>26/8/23</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>00000000001</td>
+                        <td>ITBA</td>
+                        <td>Cuota</td>
+                        <td>26/8/23</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>00000000001</td>
+                        <td>ITBA</td>
+                        <td>Cuota</td>
+                        <td>26/8/23</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>00000000001</td>
+                        <td>ITBA</td>
+                        <td>Cuota</td>
+                        <td>26/8/23</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>00000000001</td>
+                        <td>ITBA</td>
+                        <td>Cuota</td>
+                        <td>26/8/23</td>
+                        <td>$40.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <footer>
-        <div class="miniIcon">
-            <i class="fa-brands fa-facebook mini"></i>
-            <i class="fa-brands fa-instagram mini"></i>
-            <i class="fa-brands fa-whatsapp mini"></i>
-        </div>
-        <div class="info">
-            <a class="footA" href="#">|| Terminos y condiciones |</a>
-            <a class="footA" href="#">| Politicas de privacidad |</a>
-            <a class="footA" href="#">| Contacto</a>
+        <div class="footer">
+            <ul class="information">
+                <li><a href="#">|| Terminos y condiciones |</a></li>
+                <li><a href="#">| Politicas de privacidad |</a></li>
+                <li> <a href="#">| Contacto</a></li>
+            </ul>
+            <div class="media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook mini"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram mini"></i></a>
+                <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp mini"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

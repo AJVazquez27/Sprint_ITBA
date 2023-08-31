@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/banco.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-principal">
+            <a href="../../index.html">
+                <img class="logo" src="../images/logo.png" alt="logo del banco">
+            </a>
+            <a href="../../index.html">Inicio</a>
+            <a href="../pages/transferencias.html">Transferencias</a>
+            <a href="../pages/pagos.html">Pagos</a>
+            <a href="#">Conversor de moneda</a>
+            <a href="../pages/iniciar_sesion.html">Iniciar sesión</a>
+            <a href="../pages/registrarse.html">Registrarse</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="prestamos">
+            <h1>SIMULADOR DE PRESTAMO</h1>
+            <form>
+                <div>
+                    <label for="montoPrestamo">Ingresar el monto del préstamo
+                        <input type="number" placeholder="Ingrese un monto" id="montoPrestamo">
+                    </label>
+                </div>
+                <div>
+                    <label for="cuotasPrestamo">Cantidad de cuotas
+                        <input type="number" placeholder="Cantidad de cuotas" id="cuotasPrestamo">
+                    </label>
+                </div>
+                <div>
+                    <label for="interesPrestamo">Tasa de interes anual
+                        <input type="number" placeholder="Ingrese la tasa de interes" id="interesPrestamo">
+                    </label>
+                </div>
+            </form>
+            <button onclick="generarTabla()">Calcular</button>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>N° de cuota</td>
+                            <td>Monto</td>
+                            <td>Interes generado</td>
+                            <td>Importe a pagar</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="ft">TOTAL</td>
+                            <td id="t1"></td>
+                            <td id="t2"></td>
+                            <td id="t3"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="miniIcon">
+            <i class="fa-brands fa-facebook mini"></i>
+            <i class="fa-brands fa-instagram mini"></i>
+            <i class="fa-brands fa-whatsapp mini"></i>
+        </div>
+        <div class="info">
+            <a class="footA" href="#">|| Terminos y condiciones |</a>
+            <a class="footA" href="#">| Politicas de privacidad |</a>
+            <a class="footA" href="#">| Contacto</a>
+        </div>
+    </footer>
+
+    <script src="../../scripts/prestamos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

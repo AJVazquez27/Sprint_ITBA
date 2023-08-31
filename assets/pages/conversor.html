@@ -8,63 +8,84 @@
     <script src="https://kit.fontawesome.com/cebc15b299.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../images/banco.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="/assets/images/banco.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 
 <body>
 
     <header>
         <nav class="nav-principal">
-            <a  href="../../index.html">
-                <img class="logo" src="../images/logo.png" alt="logo del banco">
-            </a>
-            <a href="../../index.html">Inicio</a>
-            <a href="../pages/transferencias.html">Transferencias</a>
-            <a href="../pages/pagos.html">Pagos</a>
-            <a href="#">Conversor de moneda</a>
-            <a href="../pages/iniciar_sesion.html">Iniciar sesión</a>
-            <a href="../pages/registrarse.html">Registrarse</a>
+            <img class="logo" src="/assets/images/logo.png" alt="logo del banco">
+            <a class="out" href="/assets/pages/iniciar_sesion.html"><i
+                    class="fa-sharp fa-solid fa-arrow-right-from-bracket fa-beat fa-2xl"
+                    style="color: rgb(66, 124, 174);"></i></a>
         </nav>
     </header>
-
-    <main>
-        <div class="conversor">
-            <h1>Conversor de moneda</h1>
-            <h3>Elegi la moneda e ingresá la cantidad</h3>
-            <section>
-                <select id="primer_moneda">
-                    <option value="ARS" selected>ARS</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                </select>
-                <input type="number" id="cantidad_1" placeholder="0">
-            </section>
-            <section>
-                <button id="cambio_valor">Cambio</button>
-                <div id="cambio"> </div>
-            </section>
-            <section>
-                <select id="segunda_moneda">
-                    <option value="ARS">ARS</option>
-                    <option value="USD" selected>USD</option>
-                    <option value="EUR">EUR</option>
-                </select>
-                <input type="number" id="cantidad_2" placeholder="0">
-            </section>
+    <div class="row">
+        <div class="leftcolum">
+            <nav>
+                <div class="sidebar">
+                    <ul id="menu">
+                        <li><i class="fa-solid fa-border-none" style="color: #e77f08;"></i><a href="/index.html"></a>
+                                Inicio</a></li>
+                        <li><i class="fa-solid fa-wallet" style="color: #e77f08;"></i><a
+                                href="/assets/pages/cuentas.html"> Cuenta</a></li>
+                        <li><i class="fa-solid fa-money-check-dollar" style="color: #e77f08;"></i><a
+                                href="/assets/pages/pagos.html"> Pagos</a></li>
+                        <li><i class="fa-solid fa-money-bill-transfer" style="color: #e77f08;"></i><a
+                                href="/assets/pages/transferencias.html"> Transferencias</a></li>
+                        <li><i class="fa-solid fa-handshake" style="color: #e77f08;"></i><a
+                                href="/assets/pages/prestamos.html"> Prestamos</a></li>
+                        <li><i class="fa-solid fa-coins" style="color: #e77f08;"></i><a
+                                href="/assets/pages/conversor.html"> Conversor</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+
+        <main>
+            <div class="conversor">
+                <h1>Conversor de moneda</h1>
+                <h3 class="eleccionDeMoneda">Elegi la moneda e ingresá la cantidad</h3>
+            </div>
+            <section class="formConversor">
+                <section>
+                    <select id="primer_moneda">
+                        <option value="ARS" selected>ARS</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                    <input type="number" id="cantidad_1" placeholder="0">
+                </section>
+                <section>
+                    <button id="cambio_valor">Cambio</button>
+                    <div id="cambio"> </div>
+                </section>
+                <section>
+                    <select id="segunda_moneda">
+                        <option value="ARS">ARS</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                    <input type="number" id="cantidad_2" placeholder="0">
+                </section>
+    </div>
+    </section>
     </main>
 
     <footer>
-        <div class="miniIcon">
-            <i class="fa-brands fa-facebook mini"></i>
-            <i class="fa-brands fa-instagram mini"></i>
-            <i class="fa-brands fa-whatsapp mini"></i>
-        </div>
-        <div class="info">
-            <a class="footA" href="#">|| Terminos y condiciones |</a>
-            <a class="footA" href="#">| Politicas de privacidad |</a>
-            <a class="footA" href="#">| Contacto</a>
+        <div class="footer">
+            <ul class="information">
+                <li><a href="#">|| Terminos y condiciones |</a></li>
+                <li><a href="#">| Politicas de privacidad |</a></li>
+                <li> <a href="#">| Contacto</a></li>
+            </ul>
+            <div class="media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook mini"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram mini"></i></a>
+                <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp mini"></i></a>
+            </div>
         </div>
     </footer>
 
