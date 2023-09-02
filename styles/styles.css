@@ -296,7 +296,7 @@ main {
   min-height: calc(100vh - 180px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
 }
 
 /* Inicio/Index */
@@ -304,7 +304,7 @@ main {
 .cards-index {
   display: flex;
   justify-content: space-evenly;
-  margin: 3rem 0 15rem 0;
+  margin: 3rem 0 6rem 0;
 }
 
 .cards-index h5 {
@@ -362,7 +362,8 @@ main {
 .banner,
 .bannerA,
 .bannerB {
-  width: 25%;
+  width: 33.333%;
+  margin-bottom: 1rem;
 }
 
 .title-seccion,
@@ -373,6 +374,12 @@ main {
 }
 
 /* SECCION CUENTAS */
+
+.cards-index-cuentas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-container-cuentas {
   width: 30rem;
@@ -512,6 +519,49 @@ a:hover {
 /*Responsive*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .cards-index{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  .card-container{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+ .footer{
+  justify-content: start;
+  margin-right: 0;
+ }
+
+ /* Cuentas*/
+
+  .cards-index-cuentas{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container-cuentas{
+    align-items: center;
+  }
+
+  /*Mis pagos*/
+
+  .payment{
+    width: 80%;
+    display: flex;
+    margin: 0;
+    margin-left: 7rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-style{
+    font-size: 1.5rem !important;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -522,10 +572,93 @@ a:hover {
     min-width: 0%;
     background-image: none;
   }
+
+  .sidebar.close, .nav-list{
+    overflow: hidden;
+  }
+
+  .cards-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container{
+    width: 19rem;
+    height: 11rem;
+    padding:0 0.5rem;
+    margin-bottom: 1rem;
+  } 
+
+  p{
+    margin-bottom: 0.7rem;
+  }
+
+  .bannerA, 
+  .bannerB,
+  .banner{
+    display: none;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+  }
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    margin-left: 2.5rem;
+    font-size: 0.7rem;
+  }
+
+  .media{
+    gap: 2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: 2.5rem;
+  }
+
+  /*Cuentas*/
+
+  .cards-index-cuentas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .card-container-cuentas{
+    width: 20rem;
+    justify-content: center;
+  }
+
+  .title-seccion{
+    margin-bottom: 0;
+  }
+
+  /*Mis pagos*/
+
+  .payment{
+    width: auto;
+    display: flex;
+    margin: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-style{
+    width: 20rem !important;
+    font-size: 0.5rem !important;
+  }
 }
 
 /* Responsive de la barra */
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .sidebar.close .nav-list li .sub-menu {
     display: none;
   }
